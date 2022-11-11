@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Location and messaging</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="map_me">Map me</string>
+    <string name="text_me">Text me</string>
+</resources>

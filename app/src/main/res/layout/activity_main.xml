@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:rotation="0"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/lbLatitude"
+            android:layout_width="150sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="60sp"
+            android:fontFamily="sans-serif"
+            android:text="Latitude"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvLatitude"
+            android:layout_width="150sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="60sp"
+            android:layout_toRightOf="@id/lbLatitude"
+            android:text=""
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/lbLongitude"
+            android:layout_width="150sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="60sp"
+            android:layout_below="@id/tvLatitude"
+            android:text="Longitude"
+            android:fontFamily="sans-serif"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tvLongitude"
+            android:layout_width="150sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="60sp"
+            android:layout_toRightOf="@id/lbLongitude"
+            android:layout_below="@id/tvLatitude"
+            android:text=""
+            android:fontFamily="sans-serif"
+            android:textSize="23sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mapMe"
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="40sp"
+            android:layout_weight="1"
+            android:text="@string/map_me" />
+
+        <Button
+            android:id="@+id/textMe"
+            android:layout_width="100sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="40sp"
+            android:layout_marginRight="40sp"
+            android:layout_weight="1"
+            android:text="@string/text_me" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView4"
+            android:name="com.example.fragments.Welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
